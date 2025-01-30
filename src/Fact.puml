@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Factory {
+    PIZZA getOrderedPizza(String inputos);
+}
+Factory--PIZZA
+interface PIZZA {
+    void getPIZZA();
+}
+class Hawaiian implements PIZZA {
+    public void  getPIZZA() ;
+}
+class  Margarita implements PIZZA {
+    public void  getPIZZA() ;
+}
+class Diablo implements PIZZA {
+    public void  getPIZZA();
+}
+
+ class FactoryTest {
+    public static void main(String[] args);
+
+}
+
+@enduml
